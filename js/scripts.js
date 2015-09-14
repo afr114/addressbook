@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('#add-address').click(function(){
     $("#new-addresses").append(
-      '<div class="new-form" style="margin-left:2%; margin-right:2%;">' +
+      '<div class="new-form" style="margin-left:2%; margin-right:2%; border-bottom:2px solid black padding-bottom: 2px; border-top:2px solid black; padding-top:2px;">' +
     '<div class="new-address">' +
       '<div class="form-group">' +
         '<label for="new-street">Address</label>' +
