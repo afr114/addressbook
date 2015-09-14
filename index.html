@@ -14,37 +14,59 @@
       <form id="formcontact">
         <div class="form-group">
           <div class="row">
-            <label for="Name"></label>
-            <input type="text" name="Name" id="Name" placeholder="Adam Smith">
+            <label for="new-name">Name</label>
+            <input type="text" name="new-name" id="new-name" placeholder="Adam Smith">
+          </div>
+          <div class="form-group">
+          <div class="row">
+            <label for="new-number">Number</label>
+            <input type="text" name="new-number" id="new-number" placeholder="5167775298">
           </div>
           <div class="row">
-            <label for="number"></label>
-            <input type="text" name="number" id="number" placeholder="5167775298">
+            <label for="new-email">Email</label>
+            <input type="text" name="new-email" id="new-email" placeholder="freemarkets@england.com">
           </div>
-          <div class="row">
-            <label for="email"></label>
-            <input type="text" name="email" id="email" placeholder="freemarkets@england.com">
-          </div>
-          <div class="row">
-            <label for="address"></label>
-            <input type="text" name="address" id="address" placeholder="23 London Dr">
-          </div>
-          <div class="row">
-            <label for="city"></label>
-            <input type="text" name="city" id="city" placeholder="London">
-          </div>
-          <div class="row">
-            <label for="zip"></label>
-            <input type="text" name="zip" id="zip" placeholder="WC2E 9RZ">
+          <div id="new-addresses">
+            <div class="new-address">
+              <div class="row">
+                <label for="new-address">Address</label>
+                <input type="text" name="new-address" class="new-address" placeholder="23 London Dr">
+              </div>
+              <div class="row">
+                <label for="new-city">City</label>
+                <input type="text" name="new-city" class="new-city" placeholder="London">
+              </div>
+              <div class="row">
+                <label for="new-state">State</label>
+                <input type="text" name="new-state" class="new-state" placeholder="New York">
+              </div>
+              <div class="row">
+                <label for="new-zip">Zip</label>
+                <input type="text" name="new-zip" class="new-zip" placeholder="WC2E 9RZ">
+              </div>
+            </div>
           </div>
         </div>
-        <button type="submit" class="btn">Go!</button>
+        <span class="btn btn-primary" id="add-address">Add Address</span>
+        <button type="submit" class="btn">Add</button>
       </form>
 
+      <h2>Contacts:</h2>
+      <ul id="contacts">
+
+      </ul>
       <br><br>
-      <div class="row">
-        <div class="result">
-          <span id="result"></span>
+      <div id="show-contact">
+        <h2></h2>
+            <p>Name <span class="name"></span></p>
+            <p>Number<span class="number"></span></p>
+            <p>Email<span class="email"></span></p>
+            <p>Addresses:</p>
+            <ul id="addresses">
+
+            </ul>
+          </div>
+        </div>
         </div>
       </div>
     </center>
